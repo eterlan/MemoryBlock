@@ -11,6 +11,12 @@ public class SceneSwitcher : MonoBehaviour
 
     [Tooltip("所有需要切换的scene")]
     public List<SceneReference> Scenes;
+
+    // Note: 如果场景按正确的顺序放进list，那么玩家第一天应该是第七个场景。
+    public int CurrentDay
+    {
+        get => CurrentSceneNumber - 7;
+    }
     
     [SerializeField,ReadOnly]
     private int CurrentSceneNumber = 0;
