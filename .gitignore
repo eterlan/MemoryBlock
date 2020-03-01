@@ -5,13 +5,13 @@
 **/.vscode/
 **/.vs
 
-**/Assets/Plugins/*
-**/Assets/Plugins.meta
+# **/Assets/Plugins/*
+# **/Assets/Plugins.meta
 **/Assets/Character
 **/Assets/Character.meta
 **/Assets/Shader/
 **/Assets/Shader.meta
-
+**/Assets/ModelPack/
 
 
 
