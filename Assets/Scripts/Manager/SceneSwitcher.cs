@@ -64,7 +64,8 @@ public class SceneSwitcher : MonoBehaviour
         Debug.Log(sceneName);
 
         // 为了解决转场景时坠空的问题
-        FPScontroller.enabled =  false;
+        if ( FPScontroller != null)
+            FPScontroller.enabled = false;
 
         SaveSystem.LoadScene(string.IsNullOrEmpty(SpawnPointInNextScene) 
             ? sceneName 
@@ -83,7 +84,9 @@ public class SceneSwitcher : MonoBehaviour
     private IEnumerator AfterSceneLoaded(float second)
     {
         yield return new WaitForSeconds(0.1f);
-        FPScontroller.enabled = true;
+        
+        if ( FPScontroller != null)
+            FPScontroller.enabled = true;
         Debug.Log("AfterSceneLoaded!");
     }
 }
