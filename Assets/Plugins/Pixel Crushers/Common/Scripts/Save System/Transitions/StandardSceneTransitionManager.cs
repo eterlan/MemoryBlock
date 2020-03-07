@@ -36,7 +36,9 @@ namespace PixelCrushers
             public UnityEvent onTransitionEnd = new UnityEvent();
             public void TriggerAnimation()
             {
+                Debug.Log($"managerload");
                 if (animator == null || string.IsNullOrEmpty(trigger)) return;
+                Debug.Log("set");
                 animator.SetTrigger(trigger);
             }
         }

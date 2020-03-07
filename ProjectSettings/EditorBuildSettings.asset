@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/ModelPack/AssetStoreOriginals/_SNAPS_PrototypingAssets/APAC_Residential/SampleScenes/APAC_Residential_SampleLayout.unity
     guid: 9b8d46638610f934d9ba582b18f33573
+  - enabled: 1
+    path: Assets/Scenes/Loading.unity
+    guid: 59c38af1cff0f48258e89f46f042acb9
   m_configObjects: {}

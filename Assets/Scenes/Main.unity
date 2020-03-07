@@ -3358,7 +3358,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh85336
+  m_Name: pb_Mesh195642
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3662,6 +3662,99 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1062093050
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1062093051}
+  - component: {fileID: 1062093054}
+  - component: {fileID: 1062093053}
+  - component: {fileID: 1062093052}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1062093051
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062093050}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5446622822082880494}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &1062093052
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062093050}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 36f3cf54896ad4ca9865acec217b106d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1062093053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062093050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1062093054
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062093050}
+  m_CullTransparentMesh: 0
 --- !u!1 &1195887464 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3670226975733955949, guid: f6fd5d07d89721a43b10ddd909f34f6f,
@@ -4149,6 +4242,7 @@ GameObject:
   - component: {fileID: 1963305964}
   - component: {fileID: 1963305967}
   - component: {fileID: 1963305966}
+  - component: {fileID: 1963305968}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -4215,6 +4309,42 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_prettyPrint: 0
+--- !u!114 &1963305968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963305963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99738be95cdf96a4c83561277430a7a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseDuringTransition: 0
+  leaveSceneTransition:
+    animator: {fileID: 1062093052}
+    trigger: LeaveScene
+    animationDuration: 2
+    minTransitionDuration: 0
+    onTransitionStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onTransitionEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  loadingSceneName: Loading
+  enterSceneTransition:
+    animator: {fileID: 1062093052}
+    trigger: EnterScene
+    animationDuration: 1
+    minTransitionDuration: 0
+    onTransitionStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onTransitionEnd:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1983584275
 GameObject:
   m_ObjectHideFlags: 0
@@ -4388,9 +4518,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1043900872014129977, guid: aa81c3e01953d40139b305759726a857,
         type: 3}
+      propertyPath: Scenes.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1043900872014129977, guid: aa81c3e01953d40139b305759726a857,
+        type: 3}
       propertyPath: FPScontroller
       value: 
       objectReference: {fileID: 1252936187}
+    - target: {fileID: 1043900872014129977, guid: aa81c3e01953d40139b305759726a857,
+        type: 3}
+      propertyPath: Scenes.Array.data[2].sceneAsset
+      value: 
+      objectReference: {fileID: 102900000, guid: 9b8d46638610f934d9ba582b18f33573,
+        type: 3}
+    - target: {fileID: 1043900872014129977, guid: aa81c3e01953d40139b305759726a857,
+        type: 3}
+      propertyPath: Scenes.Array.data[2].scenePath
+      value: Assets/ModelPack/AssetStoreOriginals/_SNAPS_PrototypingAssets/APAC_Residential/SampleScenes/APAC_Residential_SampleLayout.unity
+      objectReference: {fileID: 0}
+    - target: {fileID: 1043900872014129977, guid: aa81c3e01953d40139b305759726a857,
+        type: 3}
+      propertyPath: Scenes.Array.data[3].sceneAsset
+      value: 
+      objectReference: {fileID: 102900000, guid: 038012af2c7311944bfdc9fc02fa1d3e,
+        type: 3}
+    - target: {fileID: 1043900872014129977, guid: aa81c3e01953d40139b305759726a857,
+        type: 3}
+      propertyPath: Scenes.Array.data[3].scenePath
+      value: Assets/ModelPack/Suburb_Neighborhood_House_Pack/Scenes/DayHouseInteriorExterior.unity
+      objectReference: {fileID: 0}
     - target: {fileID: 1043900872014129978, guid: aa81c3e01953d40139b305759726a857,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4613,6 +4770,11 @@ PrefabInstance:
       propertyPath: conversationActor
       value: 
       objectReference: {fileID: 1252936186}
+    - target: {fileID: 4597242632077374744, guid: 7aa2106fe35b340b39dacaeb24cbb2fa,
+        type: 3}
+      propertyPath: conversation
+      value: "\u4F60\u597D\u5440"
+      objectReference: {fileID: 0}
     - target: {fileID: 4636866380658434408, guid: 7aa2106fe35b340b39dacaeb24cbb2fa,
         type: 3}
       propertyPath: m_Name
@@ -4752,3 +4914,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4692eef77a5f945b5b061c7a3de0194b, type: 3}
+--- !u!224 &5446622822082880494 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5446622822093003733, guid: 4692eef77a5f945b5b061c7a3de0194b,
+    type: 3}
+  m_PrefabInstance: {fileID: 5446622822082880493}
+  m_PrefabAsset: {fileID: 0}

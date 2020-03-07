@@ -303,6 +303,7 @@ namespace PixelCrushers
 
         private static IEnumerator LoadSceneInternalTransitionCoroutine(string sceneName)
         {
+            Debug.Log($"savesystemload");
             yield return instance.StartCoroutine(sceneTransitionManager.LeaveScene());
             if (sceneName.StartsWith("index:"))
             {

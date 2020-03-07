@@ -37,8 +37,8 @@ public class SceneSwitcher : MonoBehaviour
         }else
         {
             Instance = this;
-            DontDestroyOnLoad(this.gameObject); 
-            
+            DontDestroyOnLoad(this.gameObject);
+            Debug.Log($"AddListener");
             SaveSystem.sceneLoaded += OnSceneLoaded;
         }
     }
@@ -77,16 +77,16 @@ public class SceneSwitcher : MonoBehaviour
 
     private void OnSceneLoaded(string sceneName, int sceneIndex)
     {
-        StartCoroutine(AfterSceneLoaded(0.1f));
+        StartCoroutine(AfterSceneLoaded());
         Debug.Log("sceneLoaded!");
     }
 
-    private IEnumerator AfterSceneLoaded(float second)
+    private IEnumerator AfterSceneLoaded()
     {
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(1.2f);
         
         if ( FPScontroller != null)
             FPScontroller.enabled = true;
-        Debug.Log("AfterSceneLoaded!");
+        Debug.Log("SetController!");
     }
 }
