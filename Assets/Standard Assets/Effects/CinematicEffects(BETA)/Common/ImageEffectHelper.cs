@@ -21,11 +21,11 @@ namespace UnityStandardAssets.CinematicEffects
                     return false;
                 }
 
-                if (!SystemInfo.supportsImageEffects || !SystemInfo.supportsRenderTextures)
-                {
-                    Debug.LogWarningFormat("Image effects aren't supported on this device ({0})", effect);
-                    return false;
-                }
+                // if (!SystemInfo.supportsImageEffects || !SystemInfo.supportsRenderTextures)
+                // {
+                //     Debug.LogWarningFormat("Image effects aren't supported on this device ({0})", effect);
+                //     return false;
+                // }
 
                 if (needDepth && !SystemInfo.SupportsRenderTextureFormat(RenderTextureFormat.Depth))
                 {

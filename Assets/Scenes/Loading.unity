@@ -206,7 +206,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 300438443}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: -0.4082179, y: 0.23456979, z: -0.10938169, w: -0.87542605}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -230,7 +230,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!81 &511146667
 AudioListener:
   m_ObjectHideFlags: 0
@@ -248,8 +248,8 @@ Camera:
   m_GameObject: {fileID: 511146666}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -264,7 +264,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 26.991467
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -473,6 +473,7 @@ GameObject:
   - component: {fileID: 1634867807}
   - component: {fileID: 1634867806}
   - component: {fileID: 1634867805}
+  - component: {fileID: 1634867808}
   m_Layer: 5
   m_Name: Loading
   m_TagString: Untagged
@@ -512,11 +513,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmpText: {fileID: 1634867806}
-  duration: 0.1
-  delay: 0.05
+  duration: 1
+  delay: 0.24
   progress: 0
   playWhenReady: 1
-  loop: 0
+  loop: 1
   playForever: 0
   animationControlled: 0
 --- !u!114 &1634867806
@@ -539,8 +540,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: Loading
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a0e31804fae084aad8ad791185c75422, type: 2}
+  m_sharedMaterial: {fileID: 6811775690870343933, guid: a0e31804fae084aad8ad791185c75422,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -565,15 +567,15 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 28
+  m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 32
   m_textAlignment: 257
-  m_characterSpacing: 0
+  m_characterSpacing: 2.79
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -637,3 +639,95 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1634867803}
   m_CullTransparentMesh: 0
+--- !u!114 &1634867808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634867803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5136edd5537b4237a4146f700bf9d72b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animatePosition: 1
+  animateRotation: 1
+  animateScale: 1
+  applyOnX: 1
+  applyOnY: 1
+  applyOnZ: 0
+  positionCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 3.1638432
+      outSlope: 3.1638432
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.014112888
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: -1.4331987
+      outSlope: -1.4331987
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.04461447
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  positionMultiplier: {x: 0, y: 10, z: 0}
+  rotationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 1.8387556
+      outSlope: 1.8387556
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.07674166
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 1.6046609
+      outSlope: 1.6046609
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.06300771
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  rotationMultiplier: {x: 0, y: 0, z: 12.18}
+  scaleCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0.33608595
+      outSlope: 0.33608595
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.10282258
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: -0.35739973
+      outSlope: -0.35739973
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.09523308
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
